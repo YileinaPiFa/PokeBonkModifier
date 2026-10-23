@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "PokéBonk 修改器",
+  "version": "1.5.0",
+  "description": "PokéBonk 局内全参数自定义修改器",
+  "author": "Antigravity",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "world": "MAIN",
+      "run_at": "document_start"
+    }
+  ]
+}
